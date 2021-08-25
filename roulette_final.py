@@ -92,7 +92,8 @@ while Participants[0].fond > 0 or Participants[1].fond > 0 or Participants[2].fo
 #/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #Print et boucle du choix des numéros
 # Ici on affiche un texte afin d'inviter le joueur à entrer son numéro, pour le moment pas encore délimitation, tempis pour le joueur
-#  il n'avait qu'à bien lire ! 
+#  il n'avait qu'à bien lire !
+# Impossible maintenant de choisir un numéro non compris dans l'intervalle.
     print("Veuillez choisir un numéro entre 1 et 50")
 # La valeur choix est déterminée pour chaque objet joueur
     if j1.fond > 0 :
