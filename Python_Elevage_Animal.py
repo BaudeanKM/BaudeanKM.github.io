@@ -1,7 +1,11 @@
+"""
+cursor.rowcount
+cursor.lastrowid
+"""
 import mysql.connector as MC
 
 try:
-    conn = MC.connect(host = 'louise', database = 'elevage',user = 'root',password = 1507666 )
+    conn = MC.connect( host = 'localhost', database = 'elevage', user = 'root', password = '' )
     cursor = conn.cursor()
 
     req ='SELECT * FROM animal'
@@ -9,8 +13,8 @@ try:
 
     animal = cursor.fetchall()
 
-    for n in animal:
-        print('espece : {}'.format(espece[1]))
+    for categorie in animal:
+        print('especes : {}'.format(categorie[1]))
 except MC.Error as err :
     print(err)
 finally:
